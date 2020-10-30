@@ -1,0 +1,2 @@
+# nastran_patran_tecplot
+nastran/patran/tecplot执行脚本编写及python提交运行
