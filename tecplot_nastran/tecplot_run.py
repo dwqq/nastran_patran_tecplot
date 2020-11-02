@@ -75,15 +75,3 @@ def main(n_order):
 if __name__ == '__main__':
     main(10)
 
-    # tecplot_dir = 'F:\\software_install\\Tecplot\\Tecplot 360 EX 2018 R1\\bin'
-    # mcr_f = os.path.join(os.getcwd(), 'tec_nast_7.mcr')
-    # call_tecplot(tecplot_dir, mcr_f)
-
-    # 测试generate_mcr
-    # tmp_mcr = os.path.join(os.getcwd(), 'tecplot_nastran2.mcr')
-    # gen_mcr = os.path.join(os.getcwd(), 'new_test.mcr')
-    # op2_f = 'E:\\work\\nastran_patran\\code\\nastran_bdf_test\\nastran_test_0\\test.op2'
-    # save_dir = os.getcwd()
-    # order_n = 1
-    # generate_mcr(tmp_mcr, gen_mcr, op2_f, order_n, save_dir)
-
