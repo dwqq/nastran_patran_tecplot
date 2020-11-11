@@ -1,0 +1,465 @@
+$ NASTRAN input file created by the Patran 2012 64-Bit input file
+$ Normal Modes Analysis, Database
+SOL 103
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = MSC.Nastran job created on 07-Sep-20 at 15:36:07
+ECHO = NONE
+RESVEC = NO
+SUBCASE 1
+$ Subcase name : Default
+   SUBTITLE=Default
+   METHOD = 1
+   SPC = 2
+   VECTOR(SORT1,REAL)=ALL
+   SPCFORCES(SORT1,REAL)=ALL
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM   PRTMAXIM YES
+EIGRL    1                       10      0
+$ Elements and Element Properties for region : pro
+PSHELL   1       1      2.       1               1
+$ Pset: "pro" will be imported as: "pshell.1"
+CQUAD4   1       1       1       2       13      12
+CQUAD4   2       1       2       3       14      13
+CQUAD4   3       1       3       4       15      14
+CQUAD4   4       1       4       5       16      15
+CQUAD4   5       1       5       6       17      16
+CQUAD4   6       1       6       7       18      17
+CQUAD4   7       1       7       8       19      18
+CQUAD4   8       1       8       9       20      19
+CQUAD4   9       1       9       10      21      20
+CQUAD4   10      1       10      11      22      21
+CQUAD4   11      1       12      13      24      23
+CQUAD4   12      1       13      14      25      24
+CQUAD4   13      1       14      15      26      25
+CQUAD4   14      1       15      16      27      26
+CQUAD4   15      1       16      17      28      27
+CQUAD4   16      1       17      18      29      28
+CQUAD4   17      1       18      19      30      29
+CQUAD4   18      1       19      20      31      30
+CQUAD4   19      1       20      21      32      31
+CQUAD4   20      1       21      22      33      32
+CQUAD4   21      1       23      24      35      34
+CQUAD4   22      1       24      25      36      35
+CQUAD4   23      1       25      26      37      36
+CQUAD4   24      1       26      27      38      37
+CQUAD4   25      1       27      28      39      38
+CQUAD4   26      1       28      29      40      39
+CQUAD4   27      1       29      30      41      40
+CQUAD4   28      1       30      31      42      41
+CQUAD4   29      1       31      32      43      42
+CQUAD4   30      1       32      33      44      43
+CQUAD4   31      1       34      35      46      45
+CQUAD4   32      1       35      36      47      46
+CQUAD4   33      1       36      37      48      47
+CQUAD4   34      1       37      38      49      48
+CQUAD4   35      1       38      39      50      49
+CQUAD4   36      1       39      40      51      50
+CQUAD4   37      1       40      41      52      51
+CQUAD4   38      1       41      42      53      52
+CQUAD4   39      1       42      43      54      53
+CQUAD4   40      1       43      44      55      54
+CQUAD4   41      1       45      46      57      56
+CQUAD4   42      1       46      47      58      57
+CQUAD4   43      1       47      48      59      58
+CQUAD4   44      1       48      49      60      59
+CQUAD4   45      1       49      50      61      60
+CQUAD4   46      1       50      51      62      61
+CQUAD4   47      1       51      52      63      62
+CQUAD4   48      1       52      53      64      63
+CQUAD4   49      1       53      54      65      64
+CQUAD4   50      1       54      55      66      65
+CQUAD4   51      1       56      57      68      67
+CQUAD4   52      1       57      58      69      68
+CQUAD4   53      1       58      59      70      69
+CQUAD4   54      1       59      60      71      70
+CQUAD4   55      1       60      61      72      71
+CQUAD4   56      1       61      62      73      72
+CQUAD4   57      1       62      63      74      73
+CQUAD4   58      1       63      64      75      74
+CQUAD4   59      1       64      65      76      75
+CQUAD4   60      1       65      66      77      76
+CQUAD4   61      1       67      68      79      78
+CQUAD4   62      1       68      69      80      79
+CQUAD4   63      1       69      70      81      80
+CQUAD4   64      1       70      71      82      81
+CQUAD4   65      1       71      72      83      82
+CQUAD4   66      1       72      73      84      83
+CQUAD4   67      1       73      74      85      84
+CQUAD4   68      1       74      75      86      85
+CQUAD4   69      1       75      76      87      86
+CQUAD4   70      1       76      77      88      87
+CQUAD4   71      1       78      79      90      89
+CQUAD4   72      1       79      80      91      90
+CQUAD4   73      1       80      81      92      91
+CQUAD4   74      1       81      82      93      92
+CQUAD4   75      1       82      83      94      93
+CQUAD4   76      1       83      84      95      94
+CQUAD4   77      1       84      85      96      95
+CQUAD4   78      1       85      86      97      96
+CQUAD4   79      1       86      87      98      97
+CQUAD4   80      1       87      88      99      98
+CQUAD4   81      1       89      90      101     100
+CQUAD4   82      1       90      91      102     101
+CQUAD4   83      1       91      92      103     102
+CQUAD4   84      1       92      93      104     103
+CQUAD4   85      1       93      94      105     104
+CQUAD4   86      1       94      95      106     105
+CQUAD4   87      1       95      96      107     106
+CQUAD4   88      1       96      97      108     107
+CQUAD4   89      1       97      98      109     108
+CQUAD4   90      1       98      99      110     109
+CQUAD4   91      1       100     101     112     111
+CQUAD4   92      1       101     102     113     112
+CQUAD4   93      1       102     103     114     113
+CQUAD4   94      1       103     104     115     114
+CQUAD4   95      1       104     105     116     115
+CQUAD4   96      1       105     106     117     116
+CQUAD4   97      1       106     107     118     117
+CQUAD4   98      1       107     108     119     118
+CQUAD4   99      1       108     109     120     119
+CQUAD4   100     1       109     110     121     120
+CQUAD4   101     1       111     112     123     122
+CQUAD4   102     1       112     113     124     123
+CQUAD4   103     1       113     114     125     124
+CQUAD4   104     1       114     115     126     125
+CQUAD4   105     1       115     116     127     126
+CQUAD4   106     1       116     117     128     127
+CQUAD4   107     1       117     118     129     128
+CQUAD4   108     1       118     119     130     129
+CQUAD4   109     1       119     120     131     130
+CQUAD4   110     1       120     121     132     131
+CQUAD4   111     1       122     123     134     133
+CQUAD4   112     1       123     124     135     134
+CQUAD4   113     1       124     125     136     135
+CQUAD4   114     1       125     126     137     136
+CQUAD4   115     1       126     127     138     137
+CQUAD4   116     1       127     128     139     138
+CQUAD4   117     1       128     129     140     139
+CQUAD4   118     1       129     130     141     140
+CQUAD4   119     1       130     131     142     141
+CQUAD4   120     1       131     132     143     142
+CQUAD4   121     1       133     134     145     144
+CQUAD4   122     1       134     135     146     145
+CQUAD4   123     1       135     136     147     146
+CQUAD4   124     1       136     137     148     147
+CQUAD4   125     1       137     138     149     148
+CQUAD4   126     1       138     139     150     149
+CQUAD4   127     1       139     140     151     150
+CQUAD4   128     1       140     141     152     151
+CQUAD4   129     1       141     142     153     152
+CQUAD4   130     1       142     143     154     153
+CQUAD4   131     1       144     145     156     155
+CQUAD4   132     1       145     146     157     156
+CQUAD4   133     1       146     147     158     157
+CQUAD4   134     1       147     148     159     158
+CQUAD4   135     1       148     149     160     159
+CQUAD4   136     1       149     150     161     160
+CQUAD4   137     1       150     151     162     161
+CQUAD4   138     1       151     152     163     162
+CQUAD4   139     1       152     153     164     163
+CQUAD4   140     1       153     154     165     164
+CQUAD4   141     1       155     156     167     166
+CQUAD4   142     1       156     157     168     167
+CQUAD4   143     1       157     158     169     168
+CQUAD4   144     1       158     159     170     169
+CQUAD4   145     1       159     160     171     170
+CQUAD4   146     1       160     161     172     171
+CQUAD4   147     1       161     162     173     172
+CQUAD4   148     1       162     163     174     173
+CQUAD4   149     1       163     164     175     174
+CQUAD4   150     1       164     165     176     175
+CQUAD4   151     1       166     167     178     177
+CQUAD4   152     1       167     168     179     178
+CQUAD4   153     1       168     169     180     179
+CQUAD4   154     1       169     170     181     180
+CQUAD4   155     1       170     171     182     181
+CQUAD4   156     1       171     172     183     182
+CQUAD4   157     1       172     173     184     183
+CQUAD4   158     1       173     174     185     184
+CQUAD4   159     1       174     175     186     185
+CQUAD4   160     1       175     176     187     186
+CQUAD4   161     1       177     178     189     188
+CQUAD4   162     1       178     179     190     189
+CQUAD4   163     1       179     180     191     190
+CQUAD4   164     1       180     181     192     191
+CQUAD4   165     1       181     182     193     192
+CQUAD4   166     1       182     183     194     193
+CQUAD4   167     1       183     184     195     194
+CQUAD4   168     1       184     185     196     195
+CQUAD4   169     1       185     186     197     196
+CQUAD4   170     1       186     187     198     197
+CQUAD4   171     1       188     189     200     199
+CQUAD4   172     1       189     190     201     200
+CQUAD4   173     1       190     191     202     201
+CQUAD4   174     1       191     192     203     202
+CQUAD4   175     1       192     193     204     203
+CQUAD4   176     1       193     194     205     204
+CQUAD4   177     1       194     195     206     205
+CQUAD4   178     1       195     196     207     206
+CQUAD4   179     1       196     197     208     207
+CQUAD4   180     1       197     198     209     208
+CQUAD4   181     1       199     200     211     210
+CQUAD4   182     1       200     201     212     211
+CQUAD4   183     1       201     202     213     212
+CQUAD4   184     1       202     203     214     213
+CQUAD4   185     1       203     204     215     214
+CQUAD4   186     1       204     205     216     215
+CQUAD4   187     1       205     206     217     216
+CQUAD4   188     1       206     207     218     217
+CQUAD4   189     1       207     208     219     218
+CQUAD4   190     1       208     209     220     219
+CQUAD4   191     1       210     211     222     221
+CQUAD4   192     1       211     212     223     222
+CQUAD4   193     1       212     213     224     223
+CQUAD4   194     1       213     214     225     224
+CQUAD4   195     1       214     215     226     225
+CQUAD4   196     1       215     216     227     226
+CQUAD4   197     1       216     217     228     227
+CQUAD4   198     1       217     218     229     228
+CQUAD4   199     1       218     219     230     229
+CQUAD4   200     1       219     220     231     230
+$ Referenced Material Records
+$ Material Record : ma
+$ Description of Material : Date: 07-Sep-20           Time: 15:34:23
+MAT1     1      2.1+11          .3      7650.
+$ Nodes of the Entire Model
+GRID     1               0.      0.      0.
+GRID     2              1.       0.      0.
+GRID     3              2.       0.      0.
+GRID     4              3.       0.      0.
+GRID     5              4.       0.      0.
+GRID     6              5.       0.      0.
+GRID     7              6.       0.      0.
+GRID     8              7.       0.      0.
+GRID     9              8.       0.      0.
+GRID     10             9.       0.      0.
+GRID     11             10.      0.      0.
+GRID     12              0.     .999998  0.
+GRID     13             1.      .999998  0.
+GRID     14             2.      .999998  0.
+GRID     15             3.      .999999  0.
+GRID     16             4.      .999999  0.
+GRID     17             5.      .999999  0.
+GRID     18             6.      .999999  0.
+GRID     19             7.      .999999  0.
+GRID     20             8.      1.       0.
+GRID     21             9.      1.       0.
+GRID     22             10.     1.       0.
+GRID     23              0.     2.       0.
+GRID     24             1.      2.       0.
+GRID     25             2.      2.       0.
+GRID     26             3.      2.       0.
+GRID     27             4.      2.       0.
+GRID     28             5.      2.       0.
+GRID     29             6.      2.       0.
+GRID     30             7.      2.       0.
+GRID     31             8.      2.       0.
+GRID     32             9.      2.       0.
+GRID     33             10.     2.       0.
+GRID     34              0.     3.       0.
+GRID     35             1.      3.       0.
+GRID     36             2.      3.       0.
+GRID     37             3.      3.       0.
+GRID     38             4.      3.       0.
+GRID     39             5.      3.       0.
+GRID     40             6.      3.       0.
+GRID     41             7.      3.       0.
+GRID     42             8.      3.       0.
+GRID     43             9.      3.       0.
+GRID     44             10.     3.       0.
+GRID     45              0.     4.       0.
+GRID     46             1.      4.       0.
+GRID     47             2.      4.       0.
+GRID     48             3.      4.       0.
+GRID     49             4.      4.       0.
+GRID     50             5.      4.       0.
+GRID     51             6.      4.       0.
+GRID     52             7.      4.       0.
+GRID     53             8.      4.       0.
+GRID     54             9.      4.       0.
+GRID     55             10.     4.       0.
+GRID     56              0.     5.       0.
+GRID     57             1.      5.       0.
+GRID     58             2.      5.       0.
+GRID     59             3.      5.       0.
+GRID     60             4.      5.       0.
+GRID     61             5.      5.       0.
+GRID     62             6.      5.       0.
+GRID     63             7.      5.       0.
+GRID     64             8.      5.       0.
+GRID     65             9.      5.       0.
+GRID     66             10.     5.       0.
+GRID     67              0.     6.       0.
+GRID     68             1.      6.       0.
+GRID     69             2.      6.       0.
+GRID     70             3.      6.       0.
+GRID     71             4.      6.       0.
+GRID     72             5.      6.       0.
+GRID     73             6.      6.       0.
+GRID     74             7.      6.       0.
+GRID     75             8.      6.       0.
+GRID     76             9.      6.       0.
+GRID     77             10.     6.       0.
+GRID     78              0.     7.       0.
+GRID     79             1.      7.       0.
+GRID     80             2.      7.       0.
+GRID     81             3.      7.       0.
+GRID     82             4.      7.       0.
+GRID     83             5.      7.       0.
+GRID     84             6.      7.       0.
+GRID     85             7.      7.       0.
+GRID     86             8.      7.       0.
+GRID     87             9.      7.       0.
+GRID     88             10.     7.       0.
+GRID     89              0.     8.       0.
+GRID     90             1.      8.       0.
+GRID     91             2.      8.       0.
+GRID     92             3.      8.       0.
+GRID     93             4.      8.       0.
+GRID     94             5.      8.       0.
+GRID     95             6.      8.       0.
+GRID     96             7.      8.       0.
+GRID     97             8.      8.       0.
+GRID     98             9.      8.       0.
+GRID     99             10.     8.       0.
+GRID     100             0.     9.       0.
+GRID     101            1.      9.       0.
+GRID     102            2.      9.       0.
+GRID     103            3.      9.       0.
+GRID     104            4.      9.       0.
+GRID     105            5.      9.       0.
+GRID     106            6.      9.       0.
+GRID     107            7.      9.       0.
+GRID     108            8.      9.       0.
+GRID     109            9.      9.       0.
+GRID     110            10.     9.       0.
+GRID     111             0.     10.      0.
+GRID     112            1.      10.      0.
+GRID     113            2.      10.      0.
+GRID     114            3.      10.      0.
+GRID     115            4.      10.      0.
+GRID     116            5.      10.      0.
+GRID     117            6.      10.      0.
+GRID     118            7.      10.      0.
+GRID     119            8.      10.      0.
+GRID     120            9.      10.      0.
+GRID     121            10.     10.      0.
+GRID     122             0.     11.      0.
+GRID     123            1.      11.      0.
+GRID     124            2.      11.      0.
+GRID     125            3.      11.      0.
+GRID     126            4.      11.      0.
+GRID     127            5.      11.      0.
+GRID     128            6.      11.      0.
+GRID     129            7.      11.      0.
+GRID     130            8.      11.      0.
+GRID     131            9.      11.      0.
+GRID     132            10.     11.      0.
+GRID     133             0.     12.      0.
+GRID     134            .999999 12.      0.
+GRID     135            2.      12.      0.
+GRID     136            3.      12.      0.
+GRID     137            4.      12.      0.
+GRID     138            5.      12.      0.
+GRID     139            6.      12.      0.
+GRID     140            7.      12.      0.
+GRID     141            8.      12.      0.
+GRID     142            9.      12.      0.
+GRID     143            10.     12.      0.
+GRID     144             0.     13.      0.
+GRID     145            .999999 13.      0.
+GRID     146            2.      13.      0.
+GRID     147            3.      13.      0.
+GRID     148            4.      13.      0.
+GRID     149            5.      13.      0.
+GRID     150            6.      13.      0.
+GRID     151            7.      13.      0.
+GRID     152            8.      13.      0.
+GRID     153            9.      13.      0.
+GRID     154            10.     13.      0.
+GRID     155             0.     14.      0.
+GRID     156            .999999 14.      0.
+GRID     157            2.      14.      0.
+GRID     158            3.      14.      0.
+GRID     159            4.      14.      0.
+GRID     160            5.      14.      0.
+GRID     161            6.      14.      0.
+GRID     162            7.      14.      0.
+GRID     163            8.      14.      0.
+GRID     164            9.      14.      0.
+GRID     165            10.     14.      0.
+GRID     166             0.     15.      0.
+GRID     167            .999999 15.      0.
+GRID     168            2.      15.      0.
+GRID     169            3.      15.      0.
+GRID     170            4.      15.      0.
+GRID     171            5.      15.      0.
+GRID     172            6.      15.      0.
+GRID     173            7.      15.      0.
+GRID     174            8.      15.      0.
+GRID     175            9.      15.      0.
+GRID     176            10.     15.      0.
+GRID     177             0.     16.      0.
+GRID     178            .999999 16.      0.
+GRID     179            2.      16.      0.
+GRID     180            3.      16.      0.
+GRID     181            4.      16.      0.
+GRID     182            5.      16.      0.
+GRID     183            6.      16.      0.
+GRID     184            7.      16.      0.
+GRID     185            8.      16.      0.
+GRID     186            9.      16.      0.
+GRID     187            10.     16.      0.
+GRID     188             0.     17.      0.
+GRID     189            .999999 17.      0.
+GRID     190            2.      17.      0.
+GRID     191            3.      17.      0.
+GRID     192            4.      17.      0.
+GRID     193            5.      17.      0.
+GRID     194            6.      17.      0.
+GRID     195            7.      17.      0.
+GRID     196            8.      17.      0.
+GRID     197            9.      17.      0.
+GRID     198            10.     17.      0.
+GRID     199             0.     18.      0.
+GRID     200            .999999 18.      0.
+GRID     201            2.      18.      0.
+GRID     202            3.      18.      0.
+GRID     203            4.      18.      0.
+GRID     204            5.      18.      0.
+GRID     205            6.      18.      0.
+GRID     206            7.      18.      0.
+GRID     207            8.      18.      0.
+GRID     208            9.      18.      0.
+GRID     209            10.     18.      0.
+GRID     210             0.     19.      0.
+GRID     211            .999999 19.      0.
+GRID     212            2.      19.      0.
+GRID     213            3.      19.      0.
+GRID     214            4.      19.      0.
+GRID     215            5.      19.      0.
+GRID     216            6.      19.      0.
+GRID     217            7.      19.      0.
+GRID     218            8.      19.      0.
+GRID     219            9.      19.      0.
+GRID     220            10.     19.      0.
+GRID     221             0.     20.      0.
+GRID     222            .999999 20.      0.
+GRID     223            2.      20.      0.
+GRID     224            3.      20.      0.
+GRID     225            4.      20.      0.
+GRID     226            5.      20.      0.
+GRID     227            6.      20.      0.
+GRID     228            7.      20.      0.
+GRID     229            8.      20.      0.
+GRID     230            9.      20.      0.
+GRID     231            10.     20.      0.
+$ Loads for Load Case : Default
+SPCADD   2       1
+$ Displacement Constraints of Load Set : dis
+SPC1     1       123456  1       THRU    11
+$ Referenced Coordinate Frames
+ENDDATA

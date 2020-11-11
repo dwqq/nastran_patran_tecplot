@@ -1,0 +1,57 @@
+;(set! *cx-exit-on-error* #t)
+file/start-transcript ${RESULT_DIR}/fluent_transcript.txt
+file/read-case ${INPUT_FILE}
+display/set/picture invert-background? no
+;display open-window 2
+;display surface-mesh 0 2 3 1 ()
+display set-window 1
+display save-picture ${RESULT_DIR}/msh.png
+define/models/solver pressure-based yes
+define/models/viscous spalart-allmaras yes
+define/materials/change-create/air air yes ideal-gas no no yes sutherland three-coefficient-method 1.716e-05 273.11 110.56 no no no
+define/boundary-conditions/pressure-far-field pressure-far-field-1 no 0 no ${MA} no 300 no ${COS_AOA} no ${SIN_AOA} no no yes no 10
+define/operating-conditions operating-pressure 101325
+solve/set/p-v-coupling 24
+solve/set/discretization-scheme pressure 12
+solve/set/discretization-scheme density 1
+solve/set/discretization-scheme mom 1
+solve/set/discretization-scheme nut 1
+solve/set/discretization-scheme temperature 1
+solve/set pseudo-transient yes yes 1 1 0
+solve/set/pseudo-relaxation-factor density 0.5
+solve/set/pseudo-relaxation-factor body-force 1
+solve/set/pseudo-relaxation-factor nut 0.9
+solve/set/pseudo-relaxation-factor turb-viscosity 1
+solve/set/pseudo-relaxation-factor temperature 0.75
+solve/monitors/residual plot yes
+solve/initialize/hyb-initialization yes
+solve/initialize set-fmg-initialization 5 0.001 100 0.001 100 0.001 100 0.001 500 0.001 500 0.75 yes
+solve/initialize fmg-initialization yes
+file write-case-data ${RESULT_DIR}/AIRFOIL.cas ok
+;solve iterate 50
+report/reference-values/compute pressure-far-field pressure-far-field-1
+solve/monitors/force/set-lift-monitor cl_1 yes wall-top wall-bottom () no yes ${RESULT_DIR}/cl.out yes 2 no -${SIN_AOA} ${COS_AOA}
+solve/monitors/force/set-drag-monitor cd_1 yes wall-top wall-bottom () no yes ${RESULT_DIR}/cd.out yes 3 no ${COS_AOA} ${SIN_AOA}
+solve/monitors/force/set-moment-monitor cm_1 yes wall-top wall-bottom () no yes ${RESULT_DIR}/cm.out yes 4 no 0.25 0 0 0 1
+solve/monitors/residual criterion-type 3
+solve iterate ${ITER_NUM}
+file write-case-data ${RESULT_DIR}/AIRFOIL-1.cas ok
+display set-window 1
+display save-picture ${RESULT_DIR}/residual.png
+display set-window 2
+display save-picture ${RESULT_DIR}/cl.png
+display set-window 3
+display save-picture ${RESULT_DIR}/cd.png
+display set-window 4
+display save-picture ${RESULT_DIR}/cm.png
+display/set/contours/surfaces 0 ()
+display/set/contours/filled-contours yes
+display/contour pressure-coefficient -1.24 1.17
+display/views/camera/zoom-camera 30
+display/views/camera/dolly-camera 2 0 0
+display/save-picture ${RESULT_DIR}/cp_contour.png
+plot/plot yes ${RESULT_DIR}/cp.txt no no no pressure-coefficient no no x-coordinate 3 1 ()
+plot/file ${RESULT_DIR}/cp.txt
+display save-picture ${RESULT_DIR}/cp.png
+file/stop-transcript
+exit yes
